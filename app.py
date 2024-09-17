@@ -21,30 +21,36 @@ app.layout = html.Div([
     html.Div([
         # Map Section
         html.Div([
-            html.H3("Topographic Map"),
-            html.Iframe(id='folium-map', srcDoc=create_map('Mumbai', 'Chennai', get_port_coordinates)._repr_html_(), width='100%', height='500', style={'border': 'none'})
+            html.H3("Topographic Map", className='mb-3'),
+            html.Iframe(id='folium-map',
+                        srcDoc=create_map('Mumbai', 'Chennai', get_port_coordinates)._repr_html_(),
+                        width='100%',
+                        height='500',
+                        style={'border': 'none'})
         ], className='col-md-12 mb-4'),
 
         # Plotly Chart Section
         html.Div([
-            html.H3("Fuel Consumption vs Route Length"),
+            html.H3("Fuel Consumption vs Route Length", className='mb-3'),
             dcc.Graph(id='fuel-plot')
         ], className='col-md-12 mb-4'),
 
         # Interactive Input Section
         html.Div([
-            html.Label("Start Port:"),
+            html.Label("Start Port:", className='mt-2'),
             dcc.Dropdown(
                 id='start-port',
                 options=[{'label': port, 'value': port} for port in ['Mumbai', 'Chennai', 'Kolkata', 'Goa', 'Delhi']],
-                value='Mumbai'
+                value='Mumbai',
+                className='mb-2'
             ),
 
-            html.Label("End Port:"),
+            html.Label("End Port:", className='mt-2'),
             dcc.Dropdown(
                 id='end-port',
                 options=[{'label': port, 'value': port} for port in ['Mumbai', 'Chennai', 'Kolkata', 'Goa', 'Delhi']],
-                value='Chennai'
+                value='Chennai',
+                className='mb-2'
             ),
 
             html.Button('Recalculate Route', id='button', n_clicks=0, className='btn btn-primary mt-2'),

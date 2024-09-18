@@ -6,6 +6,7 @@ PORTS = {
     'Chennai': (13.0827, 80.2707),
     'Kolkata': (22.5726, 88.3639),
     'Goa': (15.2993, 74.1240),
+    'Delhi': (28.6139, 77.2090),
     'Dighi Port': (18.2777, 72.9686)
 }
 
@@ -38,7 +39,14 @@ def calculate_sea_route(start_port, end_port):
         route_info = fetch_searoutes_api(start_coords[0], start_coords[1], end_coords[0], end_coords[1])
         
         # Extract coordinates for the route path
-        route_coords = route_info.get('features', [])[0]['geometry']['coordinates']
+        features = route_info.get('features', [])
+        if not features:
+            return {"error": "No route data found in API response"}
+        
+        route_coords = features[0]['geometry']['coordinates']
+        
+        # Convert route coordinates to [lat, lon] format for Folium
+        route_coords = [[lat, lon] for lon, lat in route_coords]
         
         return {
             "route_coords": route_coords,

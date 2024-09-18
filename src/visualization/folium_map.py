@@ -11,7 +11,9 @@ def create_map(start, end, get_coordinates_func):
     route_info = calculate_sea_route(start, end)
     route_coords = route_info.get("route_coords", [])
     
-    # Convert the coordinates to the required [lat, lon] format for Folium
+    print("Route Coordinates:", route_coords)  # Add this line
+    
+    # Convert the coordinates to [lat, lon] format for Folium
     route_coords = [[lat, lon] for lon, lat in route_coords]
     
     m = folium.Map(location=[(start_coords[0] + end_coords[0]) / 2, (start_coords[1] + end_coords[1]) / 2], zoom_start=5)
@@ -23,6 +25,7 @@ def create_map(start, end, get_coordinates_func):
     # Add route line if coordinates are available
     if route_coords:
         folium.PolyLine(locations=route_coords, color='blue').add_to(m)
+    else:
+        print("No route coordinates available to display on the map.")
     
     return m
-

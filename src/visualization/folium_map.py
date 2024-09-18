@@ -1,20 +1,28 @@
 import folium
+from src.algorithms.route_calculator import calculate_sea_route, get_port_coordinates
 
-def create_map(start_port, end_port, get_port_coordinates):
-    start_coords = get_port_coordinates(start_port)
-    end_coords = get_port_coordinates(end_port)
+def create_map(start, end, get_coordinates_func):
+    start_coords = get_coordinates_func(start)
+    end_coords = get_coordinates_func(end)
     
     if not start_coords or not end_coords:
-        raise ValueError("Invalid ports specified")
+        raise ValueError("Invalid start or end port coordinates")
+
+    route_info = calculate_sea_route(start, end)
+    route_coords = route_info.get("route_coords", [])
     
-    # Initialize the map
+    # Convert the coordinates to the required [lat, lon] format for Folium
+    route_coords = [[lat, lon] for lon, lat in route_coords]
+    
     m = folium.Map(location=[(start_coords[0] + end_coords[0]) / 2, (start_coords[1] + end_coords[1]) / 2], zoom_start=5)
     
-    # Add markers for ports
-    folium.Marker(start_coords, popup=f"Start: {start_port}").add_to(m)
-    folium.Marker(end_coords, popup=f"End: {end_port}").add_to(m)
+    # Add start and end markers
+    folium.Marker(location=start_coords, popup=f"Start: {start}", icon=folium.Icon(color='green')).add_to(m)
+    folium.Marker(location=end_coords, popup=f"End: {end}", icon=folium.Icon(color='red')).add_to(m)
     
-    # Add a line between ports
-    folium.PolyLine([start_coords, end_coords], color='blue', weight=2.5, opacity=1).add_to(m)
+    # Add route line if coordinates are available
+    if route_coords:
+        folium.PolyLine(locations=route_coords, color='blue').add_to(m)
     
     return m
+

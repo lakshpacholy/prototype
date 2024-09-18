@@ -28,28 +28,37 @@ body {
 }
 
 .overlay-header {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
     z-index: 1000;
-    color: #fff;
-    text-align: center;
 }
 
 .overlay-controls {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
     position: absolute;
-    top: 10%;
-    left: 5%;
+    top: 70px;
+    left: 20px;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-    padding: 15px;
-    border-radius: 5px;
+    border-radius: 8px;
+    width: 250px;
 }
 
-.overlay-controls .dropdown {
-    width: 250px;
+.dropdown {
+    width: 100%;
     margin-bottom: 10px;
+}
+
+.map-container {
+    position: relative;
+    height: 100vh;
+}
+
+iframe {
+    border: none;
 }
 
 .overlay-chart-container {

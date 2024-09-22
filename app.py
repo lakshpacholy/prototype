@@ -274,7 +274,7 @@ app.layout = dbc.Container(
 
                         ]
                     ),
-                    style=CARD_STYLE,  # Ensure this line has a comma
+                    style=CARD_STYLE,  
                 ),
                 width=12,
             ),  # Add a closing comma here
@@ -329,6 +329,19 @@ app.layout = dbc.Container(
      Input('start-port', 'value'),
      Input('end-port', 'value')]
 )
+def update_content(n_clicks, start_port, end_port):
+    if n_clicks > 0:  # Only update if the button has been clicked
+        # Update Folium map
+        m = create_map(start_port, end_port, get_port_coordinates)
+        map_html = m._repr_html_()
+
+        # Calculate direct distance
+        distance_info = calculate_sea_route(start_port, end_port)
+        distance = distance_info.get('direct_distance_km', float('inf'))
+        distance_text = f"Direct Distance: {distance:.2f} km" if distance != float('inf') else "Invalid ports specified"
+        
+        return map_html, distance_text
+    return dash.no_update, dash.no_update  # Return no update if button hasn't been clicked
 
 #Hamburger menu
 @app.callback(
@@ -340,18 +353,6 @@ def toggle_offcanvas(n_clicks, is_open):
     if n_clicks:
         return not is_open
     return is_open
-
-def update_content(n_clicks, start_port, end_port):
-    # Update Folium map
-    m = create_map(start_port, end_port, get_port_coordinates)
-    map_html = m._repr_html_()
-
-    # Calculate direct distance
-    distance_info = calculate_sea_route(start_port, end_port)
-    distance = distance_info.get('direct_distance_km', float('inf'))
-    distance_text = f"Direct Distance: {distance:.2f} km" if distance != float('inf') else "Invalid ports specified"
-
-    return map_html, distance_text
 
 if __name__ == '__main__':
     app.run_server(debug=True)

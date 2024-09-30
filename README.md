@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.icons8.com/?size=512&id=55494&format=png" width="20%" alt="PROTOTYPE-logo">
+  <img src="src/web_interface/assets/ship.jpg" width="20%" alt="PROTOTYPE-logo">
 </p>
 <p align="center">
     <h1 align="center">PROTOTYPE</h1>
@@ -213,6 +213,6 @@ This project is licensed under the [MIT License](https://choosealicense.com/lice
 - Thanks to all contributors and community members who provided valuable feedback, support, and suggestions for improving the project.
 - Acknowledgment to the **maintainers of libraries** used in this project for their continuous efforts in maintaining and updating these resources, ensuring compatibility and performance.
 - Special mention to my peers and mentors who provided insights and motivation throughout the project lifecycle.
-
+w
 
 ---

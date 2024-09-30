@@ -8,12 +8,9 @@
     <em><code>MATSYA NAVIGATION: An innovative maritime navigation system aimed at optimizing shipping routes for safety and efficiency.</code></em>
 </p>
 <p align="center">
-	<img src="https://img.shields.io/github/license/lakshpacholy/prototype?style=flat&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
 	<img src="https://img.shields.io/github/last-commit/lakshpacholy/prototype?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
 	<img src="https://img.shields.io/github/languages/top/lakshpacholy/prototype?style=flat&color=0080ff" alt="repo-top-language">
 	<img src="https://img.shields.io/github/languages/count/lakshpacholy/prototype?style=flat&color=0080ff" alt="repo-language-count">
-	<img src="https://img.shields.io/travis/lakshpacholy/prototype?style=flat&logo=travis" alt="build-status">
-	<img src="https://img.shields.io/codecov/c/github/lakshpacholy/prototype?style=flat&logo=codecov" alt="coverage-status">
 </p>
 
 <p align="center">
@@ -212,7 +209,7 @@ Contributions are welcome! Here are several ways you can contribute:
 
 ##  License
 
-This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/). You can find the full text of the license in the [LICENSE](https://github.com/lakshpacholy/prototype/blob/main/LICENSE) file.
+This project is not officially licensed, but it is free to use. You are welcome to use, modify, and distribute it as you wish.
 
 ---
 

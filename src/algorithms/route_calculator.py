@@ -10,7 +10,7 @@ PORTS = {
     'Dighi Port': (18.2777, 72.9686)
 }
 
-API_KEY = 'uzFYoLlMoZ6i3cBiqlHY5snTkrlL1CnMPkBZHZ50'
+API_KEY = 'KEY'
 
 def get_port_coordinates(port_name):
     return PORTS.get(port_name)

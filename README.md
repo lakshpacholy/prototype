@@ -1,26 +1,37 @@
 <p align="center">
-  <img src="src/web_interface/assets/ship.jpg" width="20%" alt="PROTOTYPE-logo">
+  <img src="src/web_interface/assets/ship.jpg" width="20%" alt="MATSYA NAVIGATION logo">
 </p>
 <p align="center">
-    <h1 align="center">PROTOTYPE</h1>
+    <h1 align="center">MATSYA NAVIGATION</h1>
 </p>
 <p align="center">
-    <em><code>❯ REPLACE-ME</code></em>
+    <em><code>MATSYA NAVIGATION: An innovative maritime navigation system aimed at optimizing shipping routes for safety and efficiency.</code></em>
 </p>
 <p align="center">
 	<img src="https://img.shields.io/github/license/lakshpacholy/prototype?style=flat&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
 	<img src="https://img.shields.io/github/last-commit/lakshpacholy/prototype?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
 	<img src="https://img.shields.io/github/languages/top/lakshpacholy/prototype?style=flat&color=0080ff" alt="repo-top-language">
 	<img src="https://img.shields.io/github/languages/count/lakshpacholy/prototype?style=flat&color=0080ff" alt="repo-language-count">
+	<img src="https://img.shields.io/travis/lakshpacholy/prototype?style=flat&logo=travis" alt="build-status">
+	<img src="https://img.shields.io/codecov/c/github/lakshpacholy/prototype?style=flat&logo=codecov" alt="coverage-status">
 </p>
+
 <p align="center">
-		<em>Built with the tools and technologies:</em>
+		<em>Built with:</em>
+		<img src="https://img.shields.io/badge/Folium-77B829.svg?style=flat&logo=Folium&logoColor=white" alt="Folium">
+		<img src="https://img.shields.io/badge/Plotly-3F4F75.svg?style=flat&logo=Plotly&logoColor=white" alt="Plotly">
+		<img src="https://img.shields.io/badge/Python-3776AB.svg?style=flat&logo=Python&logoColor=white" alt="Python">
+		<img src="https://img.shields.io/badge/Dash-008DE4.svg?style=flat&logo=Dash&logoColor=white" alt="Dash">
+		<img src="https://img.shields.io/badge/Django-092E20.svg?style=flat&logo=Django&logoColor=white" alt="Django">
+		<img src="https://img.shields.io/badge/Flask-000000.svg?style=flat&logo=Flask&logoColor=white" alt="Flask">
 </p>
+
 <p align="center">
-	<img src="https://img.shields.io/badge/Folium-77B829.svg?style=flat&logo=Folium&logoColor=white" alt="Folium">
-	<img src="https://img.shields.io/badge/Plotly-3F4F75.svg?style=flat&logo=Plotly&logoColor=white" alt="Plotly">
-	<img src="https://img.shields.io/badge/Python-3776AB.svg?style=flat&logo=Python&logoColor=white" alt="Python">
-	<img src="https://img.shields.io/badge/Dash-008DE4.svg?style=flat&logo=Dash&logoColor=white" alt="Dash">
+    <em>Designed for shipping companies and maritime professionals.</em>
+</p>
+
+<p align="center">
+    <strong><code>❯ Check out the repository to learn more!</code></strong>
 </p>
 
 <br>

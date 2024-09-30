@@ -45,13 +45,13 @@
 
 ##  Overview
 
-<code>❯ REPLACE-ME</code>
+<code>❯ Matsya Navigation is a real-time ship routing application that allows users to interactively track a ship’s current location, speed, course, and weather conditions. It calculates the best routes between Indian ports using data from the SeaRoutes API and visualizes these routes on a map with Folium. The application is built using the Dash framework, leveraging Bootstrap components for styling.</code>
 
 ---
 
 ##  Features
 
-<code>❯ REPLACE-ME</code>
+<code>❯ Key features of the application include real-time tracking of maritime routes, integration of weather data, a user-friendly interface for port selection, and a dynamic route calculation that takes into account various maritime conditions for optimal navigation.</code>
 
 ---
 
@@ -76,8 +76,8 @@
 
 | File | Summary |
 | --- | --- |
-| [requirements.txt](https://github.com/lakshpacholy/prototype/blob/main/requirements.txt) | <code>❯ REPLACE-ME</code> |
-| [app.py](https://github.com/lakshpacholy/prototype/blob/main/app.py) | <code>❯ REPLACE-ME</code> |
+| [requirements.txt](https://github.com/lakshpacholy/prototype/blob/main/requirements.txt) | <code>❯ Contains all necessary Python libraries required to run the application.</code> |
+| [app.py](https://github.com/lakshpacholy/prototype/blob/main/app.py) | <code>❯ Main entry point for the application that handles user interactions and renders the layout.</code> |
 
 </details>
 
@@ -85,7 +85,7 @@
 
 | File | Summary |
 | --- | --- |
-| [route_calculator.py](https://github.com/lakshpacholy/prototype/blob/main/src/algorithms/route_calculator.py) | <code>❯ REPLACE-ME</code> |
+| [route_calculator.py](https://github.com/lakshpacholy/prototype/blob/main/src/algorithms/route_calculator.py) | <code>❯ Manages the logic for calculating maritime routes using the SeaRoutes API and Geopy for distance calculations.</code> |
 
 </details>
 
@@ -93,8 +93,8 @@
 
 | File | Summary |
 | --- | --- |
-| [folium_map.py](https://github.com/lakshpacholy/prototype/blob/main/src/visualization/folium_map.py) | <code>❯ REPLACE-ME</code> |
-| [plotly_charts.py](https://github.com/lakshpacholy/prototype/blob/main/src/visualization/plotly_charts.py) | <code>❯ REPLACE-ME</code> |
+| [folium_map.py](https://github.com/lakshpacholy/prototype/blob/main/src/visualization/folium_map.py) | <code>❯ Handles the rendering of routes and waypoints on a Folium map.</code> |
+| [plotly_charts.py](https://github.com/lakshpacholy/prototype/blob/main/src/visualization/plotly_charts.py) | <code>❯ (Future implementation) Will handle the rendering of additional data visualizations using Plotly.</code> |
 
 </details>
 
@@ -104,33 +104,33 @@
 
 ###  Prerequisites
 
-**Python**: `version x.y.z`
+**Python**: `version 3.8` or higher is required to run this project.
 
 ###  Installation
 
 Build the project from source:
 
 1. Clone the prototype repository:
-```sh
-❯ git clone https://github.com/lakshpacholy/prototype
-```
+    ```sh
+    ❯ git clone https://github.com/lakshpacholy/prototype
+    ```
 
 2. Navigate to the project directory:
-```sh
-❯ cd prototype
-```
+    ```sh
+    ❯ cd prototype
+    ```
 
 3. Install the required dependencies:
-```sh
-❯ pip install -r requirements.txt
-```
+    ```sh
+    ❯ pip install -r requirements.txt
+    ```
 
 ###  Usage
 
 To run the project, execute the following command:
 
 ```sh
-❯ python main.py
+❯ python app.py
 ```
 
 ###  Tests
@@ -145,11 +145,14 @@ Execute the test suite using the following command:
 
 ##  Project Roadmap
 
-- [X] **`Task 1`**: <strike>Implement feature one.</strike>
-- [ ] **`Task 2`**: Implement feature two.
-- [ ] **`Task 3`**: Implement feature three.
+The project roadmap outlines the key tasks and features planned for the prototype. Each task indicates its current status, helping contributors understand what is completed and what remains to be done.
 
----
+- [X] **`Task 1`**: <strike>Implement feature one.</strike> This task has been completed and is fully functional.
+- [ ] **`Task 2`**: Implement feature two. This task is currently in progress and requires further development.
+- [ ] **`Task 3`**: Implement feature three. This task is yet to be started, pending the completion of prior tasks.
+
+Future tasks will be added as the project evolves, and contributors are encouraged to suggest additional features or improvements.
+
 
 ##  Contributing
 
@@ -198,12 +201,18 @@ Contributions are welcome! Here are several ways you can contribute:
 
 ##  License
 
-This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
+This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/). You can find the full text of the license in the [LICENSE](https://github.com/lakshpacholy/prototype/blob/main/LICENSE) file.
 
 ---
 
 ##  Acknowledgments
 
-- List any resources, contributors, inspiration, etc. here.
+- Acknowledgment to **Folium** for their powerful mapping capabilities that enabled dynamic visualizations of geographic data.
+- Thanks to **Plotly** for their interactive graphing library, which facilitated the creation of engaging visual representations of data insights.
+- Appreciation for the **Python community**, whose numerous tutorials, documentation, and open-source contributions have significantly aided in the development process.
+- Thanks to all contributors and community members who provided valuable feedback, support, and suggestions for improving the project.
+- Acknowledgment to the **maintainers of libraries** used in this project for their continuous efforts in maintaining and updating these resources, ensuring compatibility and performance.
+- Special mention to my peers and mentors who provided insights and motivation throughout the project lifecycle.
+
 
 ---

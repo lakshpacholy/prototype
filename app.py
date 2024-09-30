@@ -356,4 +356,3 @@ def toggle_offcanvas(n_clicks, is_open):
 
 if __name__ == '__main__':
     app.run_server(debug=True)
-
